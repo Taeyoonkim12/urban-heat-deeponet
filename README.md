@@ -1,7 +1,6 @@
 # urban-heat-deeponet
 
-Code for the paper *"[TITLE]"* ([JOURNAL], [DOI placeholder]).
-
+Code for the paper 
 Taeyoon Kim (Pukyong National University), Yongjin Choi (KAIST),
 Jaekyoung Kim (Konkuk University; corresponding author, jkkim4769@konkuk.ac.kr).
 
