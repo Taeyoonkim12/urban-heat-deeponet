@@ -31,14 +31,7 @@ Supplementary controls (not part of the M0-M5 progression):
 | D1 | inner-product coupling + d_BP | `python main.py --model d1 ...` |
 | Solar control | M4 architecture with the solar branch, no SEB loss (verifies that the hour attribution is not an encoding artifact; identical architecture to M5 - only the loss differs) | `python main.py --model solar_control ...` |
 
-Supplementary feature-enriched baselines (unified short protocol -
-200 epochs, patience 40): `baselines/train_mlp_enriched.py` (268-D
-flattened M4 inputs, parameter-matched),
-`baselines/train_lightgbm_enriched.py` (8-D: plain inputs + d_BP +
-category) and `baselines/train_lightgbm_fourier.py` (264-D: plain
-inputs + d_BP + the M3/M4 multiscale Fourier features + category).
-The matched M4 short run is `python main.py --model m4 --epochs 200
---patience 40 ...`.
+Supplementary feature-enriched baselines: `baselines/train_mlp_enriched.py` (268-D flattened M4 inputs, parameter-matched), `baselines/train_lightgbm_enriched.py` (8-D: plain inputs + d_BP + category), and `baselines/train_lightgbm_fourier.py` (264-D: plain inputs + d_BP + the M3/M4 multiscale Fourier features + category). The matched M4 short run uses the same 200-epoch protocol (`python main.py --model m4 --epochs 200 ...`). 
 
 Notes:
 - Solar-branch inputs are `[RH, T_amb, solar altitude, solar azimuth,
